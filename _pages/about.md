@@ -4,8 +4,9 @@ title: About Me
 permalink: /about/
 ---
 
-This website is powered by **[fastpages](https://github.com/fastai/fastpages)** [^1].
+This website is my submission for the PMIM502 Health Data Visualization module at Swansea University. 
 
+Jason Summers
+SN: 903702
 
-
-[^1]:a blogging platform that natively supports Jupyter notebooks in addition to other formats.
+You can find me on LinkedIn **[here](www.linkedin.com/in/jmsummers98)**
