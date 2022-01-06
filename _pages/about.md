@@ -9,4 +9,4 @@ This website is my submission for the PMIM502 Health Data Visualization module a
 Jason Summers
 SN: 903702
 
-You can find me on LinkedIn **[here.](www.linkedin.com/in/jmsummers98)**
+You can find me on LinkedIn **[here.](www.linkedin.com/in/jmsummers98)
