@@ -4,21 +4,21 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.7.1 -->
-<title>Environmental and Societal Factors | PMIM502: Societal Impacts on Depression Across the World</title>
+<title>Explore the Data | PMIM502: Societal Impacts on Depression Across the World</title>
 <meta name="generator" content="Jekyll v4.1.1" />
-<meta property="og:title" content="Environmental and Societal Factors" />
+<meta property="og:title" content="Explore the Data" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="A collection of visualizations to highlight how environmental and societal factors impact our mental well-being." />
-<meta property="og:description" content="A collection of visualizations to highlight how environmental and societal factors impact our mental well-being." />
+<meta name="description" content="Here you can look through the data yourself in it’s raw form." />
+<meta property="og:description" content="Here you can look through the data yourself in it’s raw form." />
 <link rel="canonical" href="https://jmsummers98.github.io/PMIM502/2022/01/04/PMIM502_Dataframe.html" />
 <meta property="og:url" content="https://jmsummers98.github.io/PMIM502/2022/01/04/PMIM502_Dataframe.html" />
 <meta property="og:site_name" content="PMIM502: Societal Impacts on Depression Across the World" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2022-01-04T00:00:00-06:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Environmental and Societal Factors" />
+<meta property="twitter:title" content="Explore the Data" />
 <script type="application/ld+json">
-{"url":"https://jmsummers98.github.io/PMIM502/2022/01/04/PMIM502_Dataframe.html","@type":"BlogPosting","headline":"Environmental and Societal Factors","dateModified":"2022-01-04T00:00:00-06:00","datePublished":"2022-01-04T00:00:00-06:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://jmsummers98.github.io/PMIM502/2022/01/04/PMIM502_Dataframe.html"},"description":"A collection of visualizations to highlight how environmental and societal factors impact our mental well-being.","@context":"https://schema.org"}</script>
+{"url":"https://jmsummers98.github.io/PMIM502/2022/01/04/PMIM502_Dataframe.html","@type":"BlogPosting","headline":"Explore the Data","dateModified":"2022-01-04T00:00:00-06:00","datePublished":"2022-01-04T00:00:00-06:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://jmsummers98.github.io/PMIM502/2022/01/04/PMIM502_Dataframe.html"},"description":"Here you can look through the data yourself in it’s raw form.","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/PMIM502/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://jmsummers98.github.io/PMIM502/feed.xml" title="PMIM502: Societal Impacts on Depression Across the World" /><link rel="shortcut icon" type="image/x-icon" href="/PMIM502/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -73,7 +73,7 @@ window.onload = wrap_img;
         <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">Environmental and Societal Factors</h1><p class="page-description">A collection of visualizations to highlight how environmental and societal factors impact our mental well-being.</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-01-04T00:00:00-06:00" itemprop="datePublished">
+    <h1 class="post-title p-name" itemprop="name headline">Explore the Data</h1><p class="page-description">Here you can look through the data yourself in it's raw form.</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-01-04T00:00:00-06:00" itemprop="datePublished">
         Jan 4, 2022
       </time>
        • <span class="read-time" title="Estimated read time">
@@ -514,37 +514,20 @@ window.onload = wrap_img;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">qgrid</span>
-<span class="kn">import</span> <span class="nn">pandas</span>
-
-<span class="n">widget</span> <span class="o">=</span> <span class="n">qgrid</span><span class="o">.</span><span class="n">show_grid</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
-<span class="n">widget</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">ipywidgets</span> <span class="k">as</span> <span class="nn">widgets</span>
+<span class="kn">from</span> <span class="nn">ipywidgets</span> <span class="kn">import</span> <span class="n">interactive</span>
+ 
+<span class="n">items</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'All'</span><span class="p">]</span><span class="o">+</span><span class="nb">sorted</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">'Country'</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">()</span><span class="o">.</span><span class="n">tolist</span><span class="p">())</span>
+ 
+<span class="k">def</span> <span class="nf">view</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s1">''</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">x</span><span class="o">==</span><span class="s1">'All'</span><span class="p">:</span> <span class="k">return</span> <span class="n">df</span>
+    <span class="k">return</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">'Country'</span><span class="p">]</span><span class="o">==</span><span class="n">x</span><span class="p">]</span>
+ 
+<span class="n">w</span> <span class="o">=</span> <span class="n">widgets</span><span class="o">.</span><span class="n">Select</span><span class="p">(</span><span class="n">options</span><span class="o">=</span><span class="n">items</span><span class="p">)</span>
+<span class="n">interactive</span><span class="p">(</span><span class="n">view</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="n">w</span><span class="p">)</span>
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">ModuleNotFoundError</span>                       Traceback (most recent call last)
-<span class="ansi-green-fg">&lt;ipython-input-12-c0e47a8b1c38&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
-<span class="ansi-green-fg">----&gt; 1</span><span class="ansi-red-fg"> </span><span class="ansi-green-fg">import</span> qgrid
-<span class="ansi-green-intense-fg ansi-bold">      2</span> <span class="ansi-green-fg">import</span> pandas
-<span class="ansi-green-intense-fg ansi-bold">      3</span> 
-<span class="ansi-green-intense-fg ansi-bold">      4</span> widget <span class="ansi-blue-fg">=</span> qgrid<span class="ansi-blue-fg">.</span>show_grid<span class="ansi-blue-fg">(</span>df<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">      5</span> widget
-
-<span class="ansi-red-fg">ModuleNotFoundError</span>: No module named 'qgrid'</pre>
-</div>
-</div>
-
 </div>
 </div>
 
