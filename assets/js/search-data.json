@@ -3,7 +3,7 @@
     
         "post0": {
             "title": "Main Visualizations",
-            "content": "Schizophrenia Across the World in 2016 . . The Change in Schizophrenic Population (%) Over 20 years . hello . My favorite search engine is Duck Duck Go. . The quarterly results look great! . Revenue was off the chart. | Profits were higher than ever. . Everything is going according to plan. . | .",
+            "content": "Depression Across the World in 2017 . . The Change in the Population With Depressive Disorders (%) Over 27 years . hello . My favorite search engine is Duck Duck Go. . The quarterly results look great! . Revenue was off the chart. | Profits were higher than ever. . Everything is going according to plan. . | . df . green = alt.Chart(df).mark_circle().encode( alt.X(&#39;Access to green space&#39;, scale=alt.Scale(zero=False)), alt.Y(&#39;Depression (%)&#39;, scale=alt.Scale(zero=False, padding=1)), color=&#39;Country&#39;, #size=&#39;Access to green space&#39; ) green + green.transform_regression(&#39;Access to green space&#39;,&#39;Depression (%)&#39;).mark_line() . . green = alt.Chart(df).mark_circle().encode( alt.X(&#39;Satisfaction with time use&#39;, scale=alt.Scale(zero=False)), alt.Y(&#39;Depression (%)&#39;, scale=alt.Scale(zero=False, padding=1)), color=&#39;Country&#39;, #size=&#39;Access to green space&#39; ) green + green.transform_regression(&#39;Satisfaction with time use&#39;,&#39;Depression (%)&#39;).mark_line() .",
             "url": "https://jmsummers98.github.io/PMIM502/2022/01/05/PMIM502_website.html",
             "relUrl": "/2022/01/05/PMIM502_website.html",
             "date": " • Jan 5, 2022"
