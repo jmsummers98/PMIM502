@@ -25,7 +25,7 @@
     
         ,"post2": {
             "title": "Explore the Data",
-            "content": "&lt;function __main__.view(x=&#39;hello&#39;, y=3)&gt; .",
+            "content": "WARNING:itables.downsample:showing 1169x7 of 4678x14 as nbytes=523936&gt;65536=maxBytes. See https://mwouts.github.io/itables/#downsampling . Country Year Depression in males (%) Depression in females (%) Time spent in social interactions Divorce Rate Depression (%) .",
             "url": "https://jmsummers98.github.io/PMIM502/2022/01/04/PMIM502_Dataframe.html",
             "relUrl": "/2022/01/04/PMIM502_Dataframe.html",
             "date": " • Jan 4, 2022"
